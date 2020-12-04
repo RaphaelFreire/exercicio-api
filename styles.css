@@ -23,7 +23,6 @@
   padding: 15px;
   box-sizing: border-box;
   border-bottom: 2px solid #EAEAEA;
-  /* border-collapse: collapse; */
 }
 
 .list-item-image{
@@ -41,7 +40,8 @@
 }
 
 .product-info-title{
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 100;
   line-height: 20px;
   margin: 0;
   padding: 0;
@@ -63,11 +63,13 @@
 
 .product-info-price > strong{
   margin-left: auto;
+  color: #00BC0E
 }
 
 .cart-product-subtotal {
   width: 100%;
   height: 60px;
+  font-size: 18px;
   margin: 0;
   position: absolute;
   bottom: 55px;
@@ -81,7 +83,7 @@
 .cart-product-button {
   width: 100%;
   height: 55px;
-  font-size: inherit;
+  font-size: 18px;
   letter-spacing: 0.5px;
   font-weight: bold;
   position: absolute;
@@ -90,6 +92,14 @@
   color: #fff;
   bottom: 0;
   outline: 0;
-  border: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.cart-product-button:hover{
+  text-decoration: underline;
+  background-color: #00bc0ddc;
 }
